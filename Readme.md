@@ -7,7 +7,7 @@ There are two options of the loop function:
 * ```kotlin
   fun <T> loopWithResult(@BuilderInference body: suspend LoopScope<T>.() -> Unit): T
   ```
-The second one supports parameterized `break` function whose parameter is returned from `loopWithResult`.
+`loopWithResult` supports a parameterized `break` function whose parameter is then returned.
 
 `continue` and `break` analogues are defined inside `LoopScope` interface:
 ```kotlin
